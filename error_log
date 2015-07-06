@@ -1,0 +1,10 @@
+[31-May-2015 08:13:02 America/Chicago] PHP Fatal error:  Uncaught exception 'PDOException' with message 'Could not connect to database (boot).' in /home3/ab58682/public_html/other/rjlab/phpcode/libs/rb.php:761
+Stack trace:
+#0 /home3/ab58682/public_html/other/rjlab/phpcode/libs/rb.php(598): RedBeanPHP\Driver\RPDO->connect()
+#1 /home3/ab58682/public_html/other/rjlab/phpcode/libs/rb.php(785): RedBeanPHP\Driver\RPDO->runQuery('SELECT * FROM a...', Array)
+#2 /home3/ab58682/public_html/other/rjlab/phpcode/libs/rb.php(3035): RedBeanPHP\Driver\RPDO->GetAll('SELECT * FROM a...', Array)
+#3 /home3/ab58682/public_html/other/rjlab/phpcode/libs/rb.php(9305): RedBeanPHP\Adapter\DBAdapter->get('SELECT * FROM a...', Array)
+#4 /home3/ab58682/public_html/other/rjlab/phpcode/libs/rb.php(9936): RedBeanPHP\Facade::query('get', 'SELECT * FROM a...', Array)
+#5 /home3/ab58682/public_html/other/rjlab/index.php(16): RedBeanPHP\Facade::getAll('SELECT * FROM a...')
+#6 {main}
+  thrown in /home3/ab58682/public_html/other/rjlab/phpcode/libs/rb.php on line 761
